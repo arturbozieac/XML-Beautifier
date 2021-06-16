@@ -1,0 +1,809 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>in progress personal-schema</title><style type="text/css">
+                    .SchemaHeader {
+                        font-family: Segoe UI;
+                        font-size: 11pt;
+                        color: #000000;
+                    }</style><style type="text/css">
+                    .SchemaName {
+                        font-family: Segoe UI;
+                        font-size: 11pt;
+                        font-weight: bold;
+                        color: #000000;
+                    }</style><style type="text/css">
+                    .Description {
+                        font-family: Segoe UI;
+                        font-size: 10pt;
+                        color: #000000;
+                    }</style><style type="text/css">
+                    .Name {
+                        font-family: Segoe UI;
+                        font-size: 8pt;
+                        font-weight: bold;
+                        color: #000000;
+                    }</style><style type="text/css">
+                    .StaticName {
+                        font-family: Segoe UI;
+                        font-size: 8pt;
+                        font-style: italic;
+                        color: #000000;
+                    }</style><style type="text/css">
+                    .FileName {
+                        font-family: Segoe UI;
+                        font-size: 8pt;
+                        color: #000000;
+                    }</style><style type="text/css">
+                    .DetailName {
+                        font-family: Segoe UI;
+                        font-size: 8pt;
+                        color: #4f4d4d;
+                    }</style><style type="text/css">
+                    .DetailValue {
+                        font-family: Segoe UI;
+                        font-size: 8pt;
+                        color: #000000;
+                    }</style><style type="text/css">
+                    pre {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }</style><style type="text/css">
+                    .table-no-border {
+                        line-height: 100%;
+                    }</style><style type="text/css">
+                    .table-border {
+                        line-height: 100%;
+                        border-style: solid;
+                        border-left-color: #ECE9D8;
+                        border-top-color: #ECE9D8;
+                        border-right-color: #ACA899;
+                        border-bottom-color: #ACA899;
+                    }</style><style type="text/css">
+                    .table-borderwithoutoutline {
+                        line-height: 100%;
+                        border-style: solid;
+                        border-width: 0px;
+                    }</style><style type="text/css">
+                    .td-border {
+                        border-style: solid;
+                        border-width: 1px;
+                        border-left-color: #ACA899;
+                        border-top-color: #ACA899;
+                        border-right-color: #ECE9D8;
+                        border-bottom-color: #ECE9D8;
+                    }</style><style type="text/css">
+                    .td-border-left {
+                        border-style: solid;
+                        border-left-width: 0px;
+                        border-top-color: #ACA899;
+                        border-right-color: #ECE9D8;
+                        border-bottom-color: #ECE9D8;
+                    }</style><style type="text/css">
+                    .td-border-top-left {
+                        border-style: solid;
+                        border-left-width: 0px;
+                        border-top-width: 0px;
+                        border-right-color: #ECE9D8;
+                        border-bottom-color: #ECE9D8;
+                    }</style><style type="text/css">
+                    .td-border-top {
+                        border-style: solid;
+                        border-top-width: 0px;
+                        border-left-color: #ACA899;
+                        border-right-color: #ECE9D8;
+                        border-bottom-color: #ECE9D8;
+                    }</style><style type="text/css">
+                    .td-border-top-right {
+                        border-style: solid;
+                        border-top-width: 0px;
+                        border-left-color: #ACA899;
+                        border-top-color: #ACA899;
+                        border-right-width: 0px;
+                        border-bottom-color: #ECE9D8;
+                    }</style><style type="text/css">
+                    .td-border-right {
+                        border-style: solid;
+                        border-right-width: 0px;
+                        border-left-color: #ACA899;
+                        border-top-color: #ACA899;
+                        border-bottom-color: #ECE9D8;
+                    }</style><style type="text/css">
+                    .td-border-bottom-right {
+                        border-style: solid;
+                        border-left-color: #ACA899;
+                        border-top-color: #ACA899;
+                        border-right-width: 0px;
+                        border-bottom-width: 0px;
+                    }</style><style type="text/css">
+                    .td-border-bottom {
+                        border-style: solid;
+                        border-bottom-width: 0px;
+                        border-left-color: #ACA899;
+                        border-top-color: #ACA899;
+                        border-right-color: #ECE9D8;
+                    }</style><style type="text/css">
+                    .td-border-bottom-left {
+                        border-style: solid;
+                        border-left-width: 0px;
+                        border-bottom-width: 0px;
+                        border-right-color: #ECE9D8;
+                        border-top-color: #ACA899;
+                    }</style><style type="text/css">
+                    .td-border-left-single {
+                        border-style: solid;
+                        border-left-width: 0px;
+                        border-top-width: 0px;
+                        border-right-color: #ECE9D8;
+                        border-bottom-width: 0px;
+                    }</style><style type="text/css">
+                    .td-border-right-single {
+                        border-style: solid;
+                        border-left-color: #ACA899;
+                        border-top-width: 0px;
+                        border-right-width: 0px;
+                        border-bottom-width: 0px;
+                    }</style><style type="text/css">
+                    .td-border-single {
+                        border-style: solid;
+                        border-left-color: #ACA899;
+                        border-top-width: 0px;
+                        border-right-color: #ECE9D8;
+                        border-bottom-width: 0px;
+                    }</style></head>
+   <body><a name="/Main Schema"></a><span class="Description">Schema Element </span><a href="#/Main Schema"><span class="Name">Main Schema</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr>
+               http://json-schema.org/draft-07/schema#
+               personal-schema.json 
+                 
+               Personal schema. 
+               
+               object
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">properties</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;">
+                     <table class="table-no-border" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailName">Name</span><span class="DetailName"></span></td>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailName">Occurrence</span></td>
+                        </tr>
+                        <tr>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><a href="#/properties/personnel"><span class="Name">personnel<br></span></a><span class="DetailValue"></span></td>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailValue">Optional<br></span></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Additional Properties</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">true</span></td>
+               </tr>
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        {
+                        "type": "object",
+                        "title": "Personal schema.",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
+                        "properties": {
+                        "personnel": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "title": "The 'personnel' property",
+                        "description": "Defines the personnel as a collection of person entries.",
+                        "properties": {}
+                        }
+                        }
+                        }
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/Main Schema
+               
+            </tr>
+         </thead>
+      </table><br><a name="/properties/personnel"></a><span class="Description">Schema Element </span><a href="#/properties/personnel"><span class="Name">properties/personnel</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+                 
+               The 'personnel' property 
+               Defines the personnel as a collection of person entries. 
+               
+               object
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">properties</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;">
+                     <table class="table-no-border" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailName">Name</span><span class="DetailName"></span></td>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailName">Occurrence</span></td>
+                        </tr>
+                        <tr>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><a href="#/properties/personnel/properties/person"><span class="Name">person<br></span></a><span class="DetailValue"></span></td>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailValue">Optional<br></span></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Additional Properties</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">false</span></td>
+               </tr>
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "personnel": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "title": "The 'personnel' property",
+                        "description": "Defines the personnel as a collection of person entries.",
+                        "properties": {
+                        "person": {"$ref": "#/definitions/personType"}
+                        }
+                        }
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/properties/personnel
+               
+            </tr>
+         </thead>
+      </table><br><a name="/properties/personnel/properties/person"></a><span class="Description">Schema Element </span><a href="#/properties/personnel/properties/person"><span class="Name">properties/personnel/properties/person</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+               reference
+               #/definitions/personType
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "person": {"$ref": "#/definitions/personType"}
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/properties/personnel/properties/person
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/personType"></a><span class="Description">Schema Element </span><a href="#/definitions/personType"><span class="Name">definitions/personType</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+                 
+               The 'person' property 
+               Specifies information about a person. 
+               
+               array
+               
+               true 
+               
+               
+               
+               
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "personType": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "title": "The 'person' property",
+                        "description": "Specifies information about a person.",
+                        "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "description": "Rules for properties defining the items that constitute a 'person'",
+                        "required": [
+                        "id",
+                        "name",
+                        "email",
+                        "link"
+                        ],
+                        "properties": {
+                        "id": {"$ref": "#/definitions/idType"},
+                        "name": {"$ref": "#/definitions/nameType"},
+                        "email": {
+                        "type": "string",
+                        "format": "email",
+                        "title": "The 'email' schema.",
+                        "description": "Email address for this person."
+                        },
+                        "link": {"$ref": "#/definitions/linkType"}
+                        }
+                        }
+                        }
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/personType
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/personType/items"></a><span class="Description">Schema Element </span><a href="#/definitions/personType/items"><span class="Name">definitions/personType/items</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+                 
+               Rules for properties defining the items that constitute a 'person' 
+               
+               object
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">properties</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;">
+                     <table class="table-no-border" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailName">Name</span><span class="DetailName"></span></td>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailName">Occurrence</span></td>
+                        </tr>
+                        <tr>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><a href="#/definitions/personType/items/properties/id"><span class="Name">id<br></span></a><a href="#/definitions/personType/items/properties/name"><span class="Name">name<br></span></a><a href="#/definitions/personType/items/properties/email"><span class="Name">email<br></span></a><a href="#/definitions/personType/items/properties/link"><span class="Name">link<br></span></a><span class="DetailValue"></span></td>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailValue">Required<br>Required<br>Required<br>Required<br></span></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Additional Properties</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">false</span></td>
+               </tr>
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "description": "Rules for properties defining the items that constitute a 'person'",
+                        "required": [
+                        "id",
+                        "name",
+                        "email",
+                        "link"
+                        ],
+                        "properties": {
+                        "id": {"$ref": "#/definitions/idType"},
+                        "name": {"$ref": "#/definitions/nameType"},
+                        "email": {
+                        "type": "string",
+                        "format": "email",
+                        "title": "The 'email' schema.",
+                        "description": "Email address for this person."
+                        },
+                        "link": {"$ref": "#/definitions/linkType"}
+                        }
+                        }
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/personType/items
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/idType"></a><span class="Description">Schema Element </span><a href="#/definitions/idType"><span class="Name">definitions/idType</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+                 
+               The 'id' property 
+               Specifies a required ID for this person.  
+               
+               string
+               
+               20 
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Examples</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">Big.Boss  Little.Boss</span></td>
+               </tr>
+               
+               
+               
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "idType": {
+                        "type": "string",
+                        "maxLength": 20,
+                        "title": "The 'id' property",
+                        "description": "Specifies a required ID for this person. ",
+                        "examples": [
+                        "Big.Boss",
+                        "Little.Boss"
+                        ]
+                        }
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/idType
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/personType/items/properties/id"></a><span class="Description">Schema Element </span><a href="#/definitions/personType/items/properties/id"><span class="Name">definitions/personType/items/properties/id</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+               reference
+               #/definitions/idType
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "id": {"$ref": "#/definitions/idType"}
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/personType/items/properties/id
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/nameType"></a><span class="Description">Schema Element </span><a href="#/definitions/nameType"><span class="Name">definitions/nameType</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+                 
+               The 'name' property 
+               Specifies the family and given name for the person. 
+               
+               object
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">properties</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;">
+                     <table class="table-no-border" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailName">Name</span><span class="DetailName"></span></td>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailName">Occurrence</span></td>
+                        </tr>
+                        <tr>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><a href="#/definitions/nameType/properties/family"><span class="Name">family<br></span></a><a href="#/definitions/nameType/properties/given"><span class="Name">given<br></span></a><span class="DetailValue"></span></td>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailValue">Required<br>Required<br></span></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Additional Properties</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">false</span></td>
+               </tr>
+               
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "nameType": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "title": "The 'name' property",
+                        "description": "Specifies the family and given name for the person.",
+                        "required": [
+                        "family",
+                        "given"
+                        ],
+                        "properties": {
+                        "family": {"$ref": "#/definitions/nameValueType"},
+                        "given": {"$ref": "#/definitions/nameValueType"}
+                        }
+                        }
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/nameType
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/nameValueType"></a><span class="Description">Schema Element </span><a href="#/definitions/nameValueType"><span class="Name">definitions/nameValueType</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+                 
+               The 'family' or 'given' property 
+               The first name or last name of the person. 
+               
+               string
+               
+               1 
+               20 
+               ^[a-zA-Z ]*$
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Examples</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">John</span></td>
+               </tr>
+               
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "nameValueType": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 20,
+                        "pattern": "^[a-zA-Z ]*$",
+                        "title": "The 'family' or 'given' property",
+                        "description": "The first name or last name of the person.",
+                        "examples": ["John"]
+                        }
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/nameValueType
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/nameType/properties/family"></a><span class="Description">Schema Element </span><a href="#/definitions/nameType/properties/family"><span class="Name">definitions/nameType/properties/family</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+               reference
+               #/definitions/nameValueType
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "family": {"$ref": "#/definitions/nameValueType"}
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/nameType/properties/family
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/nameType/properties/given"></a><span class="Description">Schema Element </span><a href="#/definitions/nameType/properties/given"><span class="Name">definitions/nameType/properties/given</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+               reference
+               #/definitions/nameValueType
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "given": {"$ref": "#/definitions/nameValueType"}
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/nameType/properties/given
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/personType/items/properties/name"></a><span class="Description">Schema Element </span><a href="#/definitions/personType/items/properties/name"><span class="Name">definitions/personType/items/properties/name</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+               reference
+               #/definitions/nameType
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "name": {"$ref": "#/definitions/nameType"}
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/personType/items/properties/name
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/personType/items/properties/email"></a><span class="Description">Schema Element </span><a href="#/definitions/personType/items/properties/email"><span class="Name">definitions/personType/items/properties/email</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+                 
+               The 'email' schema. 
+               Email address for this person. 
+               
+               string
+               
+               email
+               
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "email": {
+                        "type": "string",
+                        "format": "email",
+                        "title": "The 'email' schema.",
+                        "description": "Email address for this person."
+                        }
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/personType/items/properties/email
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/linkType"></a><span class="Description">Schema Element </span><a href="#/definitions/linkType"><span class="Name">definitions/linkType</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+                 
+               The 'link' property 
+               Specifies who is the manager and who are the subordinates for this person. 
+               
+               object
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">properties</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;">
+                     <table class="table-no-border" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailName">Name</span><span class="DetailName"></span></td>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailName">Occurrence</span></td>
+                        </tr>
+                        <tr>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><a href="#/definitions/linkType/properties/subordinates"><span class="Name">subordinates<br></span></a><a href="#/definitions/linkType/properties/manager"><span class="Name">manager<br></span></a><span class="DetailValue"></span></td>
+                           <td align="left" valign="top" style="background-color:#80b1ff;"><span class="DetailValue">Optional<br>Optional<br></span></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Additional Properties</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">false</span></td>
+               </tr>
+               
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "linkType": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "title": "The 'link' property",
+                        "description": "Specifies who is the manager and who are the subordinates for this
+                        person.",
+                        "properties": {
+                        "subordinates": {
+                        "type": "array",
+                        "title": "The 'subordinates' propety",
+                        "description": "Specifies the ids of the subordinates.",
+                        "items": {}
+                        },
+                        "manager": {"$ref": "#/definitions/idType"}
+                        }
+                        }
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/linkType
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/linkType/properties/subordinates"></a><span class="Description">Schema Element </span><a href="#/definitions/linkType/properties/subordinates"><span class="Name">definitions/linkType/properties/subordinates</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+                 
+               The 'subordinates' propety 
+               Specifies the ids of the subordinates. 
+               
+               array
+               
+               false 
+               
+               
+               
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "subordinates": {
+                        "type": "array",
+                        "title": "The 'subordinates' propety",
+                        "description": "Specifies the ids of the subordinates.",
+                        "items": {"$ref": "#/definitions/idType"}
+                        }
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/linkType/properties/subordinates
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/linkType/properties/subordinates/items"></a><span class="Description">Schema Element </span><a href="#/definitions/linkType/properties/subordinates/items"><span class="Name">definitions/linkType/properties/subordinates/items</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+               reference
+               #/definitions/idType
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "items": {"$ref": "#/definitions/idType"}
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/linkType/properties/subordinates/items
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/linkType/properties/manager"></a><span class="Description">Schema Element </span><a href="#/definitions/linkType/properties/manager"><span class="Name">definitions/linkType/properties/manager</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+               reference
+               #/definitions/idType
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "manager": {"$ref": "#/definitions/idType"}
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/linkType/properties/manager
+               
+            </tr>
+         </thead>
+      </table><br><a name="/definitions/personType/items/properties/link"></a><span class="Description">Schema Element </span><a href="#/definitions/personType/items/properties/link"><span class="Name">definitions/personType/items/properties/link</span></a><table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+         <thead>
+            <tr> 
+               reference
+               #/definitions/linkType
+               
+               
+               
+               
+               <tr>
+                  <td class="td-border" align="right" valign="top" style="width:10%;background-color:#80b1ff;"><span class="DetailName">Source code</span></td>
+                  <td class="td-border" align="left" valign="top" style="width:90%;background-color:#80b1ff;"><span class="Title">
+                        "link": {"$ref": "#/definitions/linkType"}
+                        
+                        </span></td>
+               </tr>
+               ../personal-schema.json#/definitions/personType/items/properties/link
+               
+            </tr>
+         </thead>
+      </table><br></body>
+</html>

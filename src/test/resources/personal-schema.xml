@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsonDoc>
+<JSONType id="#/Main Schema">
+<version>http://json-schema.org/draft-07/schema#</version>
+<path>personal-schema.json</path> 
+ <annotations>  
+<title>Personal schema.</title> 
+ </annotations>
+<oxy_type>object</oxy_type>
+ <properties>
+<personnel ref="#/properties/personnel" name="personnel" required="false"></personnel>
+</properties>
+ <additionalProperties value ="true"/>
+<sourceCode>
+<token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"object"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Personal schema."</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"$schema"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"http://json-schema.org/draft-07/schema#"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"properties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"personnel"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"object"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"additionalProperties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="0,0,90">false</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The 'personnel' property"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Defines the personnel as a collection of person entries."</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"properties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="40,40,40">}</token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/Main Schema">../personal-schema.json#/Main Schema</schemaLocation>
+</JSONType>
+<JSONType id="#/properties/personnel"> 
+ <annotations>  
+<title>The 'personnel' property</title> 
+ <description>Defines the personnel as a collection of person entries.</description> 
+ </annotations>
+<oxy_type>object</oxy_type>
+ <properties>
+<person ref="#/properties/personnel/properties/person" name="person" required="false"></person>
+</properties>
+ <additionalProperties value ="false"/>
+<usedByValues>
+<usedBy href="#/Main Schema" name="#/Main Schema"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"personnel"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"object"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"additionalProperties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="0,0,90">false</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The 'personnel' property"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Defines the personnel as a collection of person entries."</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"properties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"person"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/personType"</token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/properties/personnel">../personal-schema.json#/properties/personnel</schemaLocation>
+</JSONType>
+<JSONType id="#/properties/personnel/properties/person"> 
+ <oxy_type>reference</oxy_type>
+<refers>#/definitions/personType</refers>
+<usedByValues>
+<usedBy href="#/properties/personnel" name="personnel"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"person"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/personType"</token><token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/properties/personnel/properties/person">../personal-schema.json#/properties/personnel/properties/person</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/personType"> 
+ <annotations>  
+<title>The 'person' property</title> 
+ <description>Specifies information about a person.</description> 
+ </annotations>
+<oxy_type>array</oxy_type>
+ <constraints>
+  <uniqueItems>true</uniqueItems> 
+ </constraints>
+<arrayItems ref="#/definitions/personType/items"/>
+ <additionalItems value ="true"/>
+<usedByValues>
+<usedBy href="#/properties/personnel/properties/person" name="personnel/properties/person"></usedBy>
+<usedBy href="#/properties/personnel" name="personnel"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"personType"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"array"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"uniqueItems"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="0,0,90">true</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The 'person' property"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Specifies information about a person."</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"items"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"object"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"additionalProperties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="0,0,90">false</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Rules for properties defining the items that constitute a 'person'"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"required"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">[</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="153,51,0">"id"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="153,51,0">"name"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="153,51,0">"email"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="153,51,0">"link"</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="40,40,40">]</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"properties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"id"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/idType"</token><token color="40,40,40">}</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"name"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/nameType"</token><token color="40,40,40">}</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"email"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">        </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"string"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">        </token><token color="0,0,150">"format"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"email"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">        </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The 'email' schema."</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">        </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Email address for this person."</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="40,40,40">}</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"link"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/linkType"</token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/personType">../personal-schema.json#/definitions/personType</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/personType/items"> 
+ <annotations>  
+<description>Rules for properties defining the items that constitute a 'person'</description> 
+ </annotations>
+<oxy_type>object</oxy_type>
+ <properties>
+<id ref="#/definitions/personType/items/properties/id" name="id" required="true"></id>
+<name ref="#/definitions/personType/items/properties/name" name="name" required="true"></name>
+<email ref="#/definitions/personType/items/properties/email" name="email" required="true"></email>
+<link ref="#/definitions/personType/items/properties/link" name="link" required="true"></link>
+</properties>
+ <additionalProperties value ="false"/>
+<usedByValues>
+<usedBy href="#/definitions/personType" name="personType"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"items"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"object"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"additionalProperties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="0,0,90">false</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Rules for properties defining the items that constitute a 'person'"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"required"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">[</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="153,51,0">"id"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="153,51,0">"name"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="153,51,0">"email"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="153,51,0">"link"</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="40,40,40">]</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"properties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"id"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/idType"</token><token color="40,40,40">}</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"name"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/nameType"</token><token color="40,40,40">}</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"email"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"string"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"format"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"email"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The 'email' schema."</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Email address for this person."</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="40,40,40">}</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"link"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/linkType"</token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/personType/items">../personal-schema.json#/definitions/personType/items</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/idType"> 
+ <annotations>  
+<title>The 'id' property</title> 
+ <description>Specifies a required ID for this person. </description> 
+ </annotations>
+<oxy_type>string</oxy_type>
+<constraints>
+<maxlength>20</maxlength> 
+ </constraints>
+<examples> 
+<item>Big.Boss</item>
+<item> Little.Boss</item>
+</examples>
+<usedByValues>
+<usedBy href="#/definitions/personType/items/properties/id" name="personType/items/properties/id"></usedBy>
+<usedBy href="#/definitions/linkType" name="linkType"></usedBy>
+<usedBy href="#/definitions/linkType/properties/subordinates" name="linkType/properties/subordinates"></usedBy>
+<usedBy href="#/definitions/personType/items" name="personType/items"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"idType"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"string"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"maxLength"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="0,113,227">20</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The 'id' property"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Specifies a required ID for this person. "</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"examples"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">[</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="153,51,0">"Big.Boss"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="153,51,0">"Little.Boss"</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="40,40,40">]</token><token color="0,0,0"></token>
+<token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/idType">../personal-schema.json#/definitions/idType</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/personType/items/properties/id"> 
+ <oxy_type>reference</oxy_type>
+<refers>#/definitions/idType</refers>
+<usedByValues>
+<usedBy href="#/definitions/personType/items" name="personType/items"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"id"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/idType"</token><token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/personType/items/properties/id">../personal-schema.json#/definitions/personType/items/properties/id</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/nameType"> 
+ <annotations>  
+<title>The 'name' property</title> 
+ <description>Specifies the family and given name for the person.</description> 
+ </annotations>
+<oxy_type>object</oxy_type>
+ <properties>
+<family ref="#/definitions/nameType/properties/family" name="family" required="true"></family>
+<given ref="#/definitions/nameType/properties/given" name="given" required="true"></given>
+</properties>
+ <additionalProperties value ="false"/>
+<usedByValues>
+<usedBy href="#/definitions/personType/items/properties/name" name="personType/items/properties/name"></usedBy>
+<usedBy href="#/definitions/personType/items" name="personType/items"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"nameType"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"object"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"additionalProperties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="0,0,90">false</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The 'name' property"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Specifies the family and given name for the person."</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"required"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">[</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="153,51,0">"family"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="153,51,0">"given"</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="40,40,40">]</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"properties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"family"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/nameValueType"</token><token color="40,40,40">}</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"given"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/nameValueType"</token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/nameType">../personal-schema.json#/definitions/nameType</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/nameValueType"> 
+ <annotations>  
+<title>The 'family' or 'given' property</title> 
+ <description>The first name or last name of the person.</description> 
+ </annotations>
+<oxy_type>string</oxy_type>
+<constraints>
+<minlength>1</minlength> 
+ <maxlength>20</maxlength> 
+ <pattern>^[a-zA-Z ]*$</pattern>
+</constraints>
+<examples> 
+<item>John</item>
+</examples>
+<usedByValues>
+<usedBy href="#/definitions/nameType/properties/family" name="nameType/properties/family"></usedBy>
+<usedBy href="#/definitions/nameType" name="nameType"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"nameValueType"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"string"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"minLength"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="0,113,227">1</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"maxLength"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="0,113,227">20</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"pattern"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"^[a-zA-Z ]*$"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The 'family' or 'given' property"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The first name or last name of the person."</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"examples"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">[</token><token color="153,51,0">"John"</token><token color="40,40,40">]</token><token color="0,0,0"></token>
+<token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/nameValueType">../personal-schema.json#/definitions/nameValueType</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/nameType/properties/family"> 
+ <oxy_type>reference</oxy_type>
+<refers>#/definitions/nameValueType</refers>
+<usedByValues>
+<usedBy href="#/definitions/nameType" name="nameType"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"family"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/nameValueType"</token><token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/nameType/properties/family">../personal-schema.json#/definitions/nameType/properties/family</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/nameType/properties/given"> 
+ <oxy_type>reference</oxy_type>
+<refers>#/definitions/nameValueType</refers>
+<usedByValues>
+<usedBy href="#/definitions/nameType" name="nameType"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"given"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/nameValueType"</token><token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/nameType/properties/given">../personal-schema.json#/definitions/nameType/properties/given</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/personType/items/properties/name"> 
+ <oxy_type>reference</oxy_type>
+<refers>#/definitions/nameType</refers>
+<usedByValues>
+<usedBy href="#/definitions/personType/items" name="personType/items"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"name"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/nameType"</token><token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/personType/items/properties/name">../personal-schema.json#/definitions/personType/items/properties/name</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/personType/items/properties/email"> 
+ <annotations>  
+<title>The 'email' schema.</title> 
+ <description>Email address for this person.</description> 
+ </annotations>
+<oxy_type>string</oxy_type>
+<constraints>
+<format>email</format>
+</constraints>
+<usedByValues>
+<usedBy href="#/definitions/personType/items" name="personType/items"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"email"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"string"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"format"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"email"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The 'email' schema."</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Email address for this person."</token><token color="0,0,0"></token>
+<token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/personType/items/properties/email">../personal-schema.json#/definitions/personType/items/properties/email</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/linkType"> 
+ <annotations>  
+<title>The 'link' property</title> 
+ <description>Specifies who is the manager and who are the subordinates for this person.</description> 
+ </annotations>
+<oxy_type>object</oxy_type>
+ <properties>
+<subordinates ref="#/definitions/linkType/properties/subordinates" name="subordinates" required="false"></subordinates>
+<manager ref="#/definitions/linkType/properties/manager" name="manager" required="false"></manager>
+</properties>
+ <additionalProperties value ="false"/>
+<usedByValues>
+<usedBy href="#/definitions/personType/items/properties/link" name="personType/items/properties/link"></usedBy>
+<usedBy href="#/definitions/personType/items" name="personType/items"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"linkType"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"object"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"additionalProperties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="0,0,90">false</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The 'link' property"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Specifies who is the manager and who are the subordinates for this person."</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"properties"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"subordinates"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"array"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The 'subordinates' propety"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Specifies the ids of the subordinates."</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">      </token><token color="0,0,150">"items"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="40,40,40">}</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">    </token><token color="0,0,150">"manager"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/idType"</token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/linkType">../personal-schema.json#/definitions/linkType</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/linkType/properties/subordinates"> 
+ <annotations>  
+<title>The 'subordinates' propety</title> 
+ <description>Specifies the ids of the subordinates.</description> 
+ </annotations>
+<oxy_type>array</oxy_type>
+ <constraints>
+  <uniqueItems>false</uniqueItems> 
+ </constraints>
+<arrayItems ref="#/definitions/linkType/properties/subordinates/items"/>
+ <additionalItems value ="true"/>
+<usedByValues>
+<usedBy href="#/definitions/linkType" name="linkType"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"subordinates"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"type"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"array"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"title"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"The 'subordinates' propety"</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"description"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"Specifies the ids of the subordinates."</token><token color="100,0,50">,</token><token color="0,0,0"></token>
+<token color="0,0,0">  </token><token color="0,0,150">"items"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/idType"</token><token color="40,40,40">}</token><token color="0,0,0"></token>
+<token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/linkType/properties/subordinates">../personal-schema.json#/definitions/linkType/properties/subordinates</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/linkType/properties/subordinates/items"> 
+ <oxy_type>reference</oxy_type>
+<refers>#/definitions/idType</refers>
+<usedByValues>
+<usedBy href="#/definitions/linkType/properties/subordinates" name="linkType/properties/subordinates"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"items"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/idType"</token><token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/linkType/properties/subordinates/items">../personal-schema.json#/definitions/linkType/properties/subordinates/items</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/linkType/properties/manager"> 
+ <oxy_type>reference</oxy_type>
+<refers>#/definitions/idType</refers>
+<usedByValues>
+<usedBy href="#/definitions/linkType" name="linkType"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"manager"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/idType"</token><token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/linkType/properties/manager">../personal-schema.json#/definitions/linkType/properties/manager</schemaLocation>
+</JSONType>
+<JSONType id="#/definitions/personType/items/properties/link"> 
+ <oxy_type>reference</oxy_type>
+<refers>#/definitions/linkType</refers>
+<usedByValues>
+<usedBy href="#/definitions/personType/items" name="personType/items"></usedBy>
+</usedByValues>
+<sourceCode>
+<token color="40,40,40"></token><token color="0,0,0"> </token><token color="0,0,150">"link"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="40,40,40">{</token><token color="0,0,150">"$ref"</token><token color="100,0,50">:</token><token color="0,0,0"> </token><token color="153,51,0">"#/definitions/linkType"</token><token color="40,40,40">}</token><token color="40,40,40"></token><token color="0,0,0"></token>
+
+</sourceCode>
+<schemaLocation href="../personal-schema.json#/definitions/personType/items/properties/link">../personal-schema.json#/definitions/personType/items/properties/link</schemaLocation>
+</JSONType>
+</jsonDoc>
