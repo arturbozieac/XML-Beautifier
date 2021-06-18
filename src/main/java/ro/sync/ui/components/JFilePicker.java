@@ -23,8 +23,6 @@ import javax.swing.JTextField;
 
 public class JFilePicker extends JPanel {
 
-	private static final long serialVersionUID = 1L;
-
 	// FilePicker components
 	private JLabel label;
 	private JTextField textField;
@@ -36,6 +34,7 @@ public class JFilePicker extends JPanel {
 	public static final int MODE_OPEN = 1;
 	public static final int MODE_SAVE = 2;
 
+	private static final long serialVersionUID = 1L;
 	/**
 	 * File Picker constructor (takes 2 strings, one for name of the field, another
 	 * for button name)
@@ -50,20 +49,17 @@ public class JFilePicker extends JPanel {
 
 		// setting flowlauout to have elements in one row
 		FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER, 5, 5);
-		flowLayout.setAlignOnBaseline(true);
 		setLayout(flowLayout);
 
 		// creates the GUI ( components styles )
 		label = new JLabel(textFieldLabel);
-
-		label.setFont(new Font("Tahoma", Font.BOLD, 12));
-
+		label.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 12));
+		
 		textField = new JTextField(35);
 		
 		button = new JButton(buttonLabel);
-		button.setBackground(new Color(59, 89, 182));
 		button.setForeground(Color.BLACK);
-		button.setFont(new Font("Tahoma", Font.BOLD, 12));
+		button.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 12));
 		
 		button.addActionListener(new ActionListener() {
 			/**

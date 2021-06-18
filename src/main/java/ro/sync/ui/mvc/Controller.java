@@ -41,11 +41,6 @@ public class Controller {
 	public Controller(Model model, View view) {
 		this.model = model;
 		this.view = view;
-		try {
-			initView();
-		} catch (InvocationTargetException | InterruptedException e) { // NOSONAR Do not re-throw exception
-			e.printStackTrace();
-		}
 	}
 
 	/**
@@ -55,16 +50,22 @@ public class Controller {
 	 * @throws InvocationTargetException
 	 * 
 	 */
-	private void initView() throws InvocationTargetException, InterruptedException {
+	public void initView() {
 		try {
 			// Set System L&F to my system L&F (a better style than default)
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 			// Schedule this for the event dispatch thread
-			SwingUtilities.invokeAndWait(new Runnable() {
-				public void run() {
-					view.displayJFrame();
-				}
-			});
+			try {
+				SwingUtilities.invokeAndWait(new Runnable() {
+					public void run() {
+						view.displayJFrame();
+					}
+				});
+			} catch (InvocationTargetException | InterruptedException e) { // NOSONAR Do not re-throw exception
+				e.printStackTrace();
+			} 
+			initButtonActions();
+			
 		} catch (UnsupportedLookAndFeelException | ClassNotFoundException | InstantiationException | IllegalAccessException e) {
 			// Will not happen
 		} 
@@ -73,7 +74,7 @@ public class Controller {
 	/**
 	 * Initializes Controller and addes action listeners
 	 */
-	public void initController() {
+	private void initButtonActions() {
 		view.getGenerateButton().addActionListener(e -> generateButtonAction());
 		view.getCancelButton().addActionListener(e -> view.dispose());
 	}

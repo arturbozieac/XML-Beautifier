@@ -9,7 +9,6 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 
 import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -25,9 +24,11 @@ import ro.sync.ui.components.JFilePicker;
  * @version 0.1
  */
 public class View extends JFrame {
-	private static final long serialVersionUID = 1L;
+	
 	private static final int WINDOW_WIDTH = 750;
 	private static final int WINDOW_HEIGHT = 350;
+	
+	private static final long serialVersionUID = 1L;
 	private static final String BROWSE_BUTTON_LABEL = "Browse...";
 	
 	private String windowTitle;
@@ -57,14 +58,19 @@ public class View extends JFrame {
 	 */
 	void displayJFrame() {
 		// Frame setup stuff
+		
+		// Set window title
 		this.setTitle(windowTitle);
+		// Default action on close operation
 		this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+		// Window size
 		this.setMinimumSize(new Dimension(WINDOW_WIDTH, WINDOW_HEIGHT));
-		this.pack();
+		// Setting relative location to NULL to display window in center
 		this.setLocationRelativeTo(null);
-		this.setResizable(true);
+		// Window cannot be resized
+		this.setResizable(false);
+		// MUST Set window visible
 		this.setVisible(true);
-		this.setIconImage(new ImageIcon("images/icon.png").getImage());
 
 		// all the frame components (used JPanel as a container for all the elements)
 		panel = new JPanel(new GridBagLayout());
@@ -93,14 +99,13 @@ public class View extends JFrame {
 		// Creating second instance of filePicker, set to save mode with filter on JSON
 		// files
 
-		filePickerSave = new JFilePicker("Output Path:", BROWSE_BUTTON_LABEL);
+		filePickerSave = new JFilePicker("Output Path:  ", BROWSE_BUTTON_LABEL);
 		filePickerSave.setMode(JFilePicker.MODE_SAVE);
 
 		// add the components to the frame
 
 		
 		titleLabel.setOpaque(true);
-		
 		titleLabel.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 18));
 		titleLabel.setForeground(Color.BLACK);
 		
@@ -110,7 +115,7 @@ public class View extends JFrame {
 		constraints.gridy = 0;
 		constraints.weighty = 1;
 		constraints.weightx = 1;
-
+		
 		panel.add(titleLabel, constraints);
 		
 		constraints.fill = GridBagConstraints.HORIZONTAL;
@@ -131,7 +136,6 @@ public class View extends JFrame {
 		generateButton.setFocusPainted(false);
 		generateButton.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 12));
 
-
 		// "Cancel" button style 
 		cancelButton.setPreferredSize(new Dimension(100, 30));
 		cancelButton.setForeground(Color.BLACK);
@@ -140,6 +144,7 @@ public class View extends JFrame {
 		
 		FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER, 5, 5);
 		flowLayout.setAlignOnBaseline(true);
+		
 		JPanel buttonsPanel = new JPanel(flowLayout);
 		buttonsPanel.add(generateButton, BorderLayout.EAST);
 		buttonsPanel.add(cancelButton, BorderLayout.CENTER);

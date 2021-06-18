@@ -25,7 +25,7 @@ public class App {
 		View userInterface = new View("XML Beautifier");
 		Model model = new Model();
 		Controller controller = new Controller(model, userInterface);
-		controller.initController();
+		controller.initView();
 		
 	}
 }
