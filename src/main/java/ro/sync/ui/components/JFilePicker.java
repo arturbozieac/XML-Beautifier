@@ -35,9 +35,9 @@ public class JFilePicker extends JPanel {
 	public static final int MODE_SAVE = 2;
 
 	private static final long serialVersionUID = 1L;
+	
 	/**
-	 * File Picker constructor (takes 2 strings, one for name of the field, another
-	 * for button name)
+	 * File Picker constructor 
 	 * 
 	 * @param textFieldLabel represents name of the field
 	 * @param buttonLabel    represents button name
@@ -63,10 +63,9 @@ public class JFilePicker extends JPanel {
 		
 		button.addActionListener(new ActionListener() {
 			/**
-			 * Anonymous method which handles action when "browse" button is pushed Calls
-			 * buttonActionPerformed()
+			 * Handles the event of pushing the browse button
 			 * 
-			 * @param evt event which was performed
+			 * @param evt performed event
 			 */
 			public void actionPerformed(ActionEvent evt) {
 				buttonActionPerformed(evt);

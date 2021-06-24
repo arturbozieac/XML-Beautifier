@@ -119,7 +119,6 @@ public class Controller {
 			}
 		} else {
 			// Creates file if there is no need to overwrite
-			// Call useSelectedFormat method to create file of selected format
 			try {
 				generateHTMLFiles(model.getInputFileXML(), model.getInputFileXSL());
 			} catch (IOException | TransformerException e) {

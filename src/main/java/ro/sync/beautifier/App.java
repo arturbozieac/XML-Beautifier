@@ -5,9 +5,8 @@ import ro.sync.ui.mvc.Model;
 import ro.sync.ui.mvc.View;
 
 /**
- * <h1>JSON Scheme Documentation Generator</h1> This program implements an
- * application that simply displays UI for a converter from JSON to other
- * output.
+ * <h1>XML Beautifier</h1> This program implements an
+ * application that simply displays UI for a beautifier for XML content
  *
  * @author Bozieac_Artur
  * @version 0.1
