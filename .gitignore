@@ -2,7 +2,3 @@ target
 .settings
 .classpath
 .project
-*.bak
-*.gif
-*.png
-*.jpg

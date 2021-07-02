@@ -9,3 +9,6 @@
         <p><a href="https://github.com/Chandler1215/XML-Beautifier/blob/main/src/main/resources/img/XML_Beautifier.pdf">Click here</a> to see presentation.</p>
     </embed>
 </object>
+
+#Webinar
+[![Webinar](./src/main/resources/img/Cover_syncro_open4tech2021.png)](https://www.youtube.com/watch?v=0a1BzDmJmtA&ab_channel=oxygenxml "Watch webinar on YouTube!")
