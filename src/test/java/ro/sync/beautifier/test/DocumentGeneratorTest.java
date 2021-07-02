@@ -29,6 +29,9 @@ public class DocumentGeneratorTest {
 		View userInterface = new View("XML Beautifier");
 		Model model = new Model();
 		Controller controller = new Controller(model, userInterface);
+		// Initializam view-ul
+		controller.initView();
+		
 		File xmlFile = new File("src/test/resources/personal-schema.xml");
 		File xslFile = new File("src/test/resources/sampleStylesheetUpgraded.xsl");
 		File outputFile = new File("src/test/resources/test.html");

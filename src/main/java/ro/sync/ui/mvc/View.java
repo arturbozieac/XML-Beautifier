@@ -33,8 +33,6 @@ public class View extends JFrame {
 	
 	private String windowTitle;
 	private JFilePicker filePickerOpenXML;
-	
-
 	private JFilePicker filePickerOpenXSL;
 	private JFilePicker filePickerSave;
 	private JPanel panel;
@@ -85,9 +83,7 @@ public class View extends JFrame {
 
 		JLabel titleLabel = new JLabel(windowTitle);
 		
-		// Creating first instance of filePicker, set to open mode with filter on JSON
-		// files
-
+		// Creating first instance of filePicker, set to open mode with filter on JSON files
 		filePickerOpenXML = new JFilePicker("XML File Path:", BROWSE_BUTTON_LABEL);
 		filePickerOpenXML.setMode(JFilePicker.MODE_OPEN);
 		filePickerOpenXML.addFileTypeFilter(".xml", "XML Files");

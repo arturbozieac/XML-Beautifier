@@ -89,10 +89,11 @@ public class Controller {
 		model.setOutputFileHTML(new File(view.getFilePickerSave().getSelectedFilePath()));
 
 		// verifies if file exists at selected path and if it is a xml file
-		if (!model.getInputFileXML().exists() && !model.getInputFileXML().getPath().contains(".xml")) {
+		if (!model.getInputFileXML().exists() || !model.getInputFileXML().getPath().contains(".xml")) {
 			showMessageDialog(null, "Invalid XML File Path");
 			return;
-		}else if(!model.getInputFileXSL().exists() && !model.getInputFileXSL().getPath().contains(".xsl")){
+			
+		}else if(!model.getInputFileXSL().exists() || !model.getInputFileXSL().getPath().contains(".xsl")){
 			showMessageDialog(null, "Invalid XSL File Path");
 			return;
 		}

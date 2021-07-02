@@ -37,7 +37,7 @@ public class JFilePicker extends JPanel {
 	private static final long serialVersionUID = 1L;
 	
 	/**
-	 * File Picker constructor 
+	 * File Picker Constructor 
 	 * 
 	 * @param textFieldLabel represents name of the field
 	 * @param buttonLabel    represents button name
